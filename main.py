@@ -1,11 +1,17 @@
 import sys
+from PyQt6.QtWidgets import QApplication
 from src.database import init_db
+from src.ui.main_window import MainWindow
+
 
 def main():
     init_db()
+    app = QApplication(sys.argv)
+    app.setApplicationName("SuggestoLearn")
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec())
 
-    # UI bootstrap will go here in Week 2
-    print("SuggestoLearn — база данных инициализирована.")
 
 if __name__ == "__main__":
     main()
