@@ -6,7 +6,7 @@ venv/
 .venv/
 data/suggestolearn.db
 data/audio_cache/
-assets/music/*.mp3
+# assets/music/*.mp3  — tracked in repo
 dist/
 build/
 *.spec
