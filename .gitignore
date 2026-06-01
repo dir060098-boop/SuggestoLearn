@@ -9,4 +9,4 @@ data/audio_cache/
 # assets/music/*.mp3  — tracked in repo
 dist/
 build/
-*.spec
+# *.spec  — tracked in repo
